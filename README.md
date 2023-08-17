@@ -4,7 +4,7 @@ summary of sprint-seq
 
 For more information, please read the article.  [Chang et.al (2023) *bioRxiv*](https://doi.org/10.1101/2022.11.16.516714)
 
-# Code preview
+# Code Preview
 
 Code for SPRINT-seq consists of four parts, **barcode_design**, **image_processing**, **gene_calling** and **cell_segmentation**. Data will be processed in this order.
 
@@ -17,6 +17,8 @@ pip install -r requirements.txt
 ```
 
 And MATLAB engine should be installed, you can follow [official guideline](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html).  
+
+**Remind!** There are lots of paths or directories need to be edited in files mentioned below.
 
 ## Barcode Design
 
@@ -48,7 +50,7 @@ Results will be large stitched images, which will be used in next part.
 
 ## Gene Calling
 
-Step 1:  Before running code, a barcode sequence file should be provided. It should be a csv file and formatted like:
+Step 1:  Before running code, a probe sequence file should be provided. It should be a csv file and formatted like:
 
 ```csv
 Name,Padlock
@@ -64,5 +66,5 @@ Step 3: Edit the directory in `Gene_calling.py` and run it. A csv file containin
 
 ## Cell Segmentation
 
-Edit the directory in `segment_OSCC.py` and run it. This code will segment cell nucleus according to DAPI channel. A csv file containing the coordinate of nucleus centroid will be generated.
+Edit the directory in `segment.py` and run it. This code will segment cell nucleus according to DAPI channel. A csv file containing the coordinate of nucleus centroid will be generated.
 
