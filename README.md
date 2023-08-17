@@ -1,6 +1,6 @@
 # SPRINT-seq
 
-summary of sprint-seq  
+SPRINTseq (Spatially Resolved and signal-diluted Next-generation Targeted sequencing) is an innovative in situ sequencing strategy that combines hybrid block coding and molecular dilution strategies, allowing an accurate RNA detection in crowded environment. This method can profile a mouse brain coronal slice within 1 day, and generate gene expression architecture in a sub-micron resolution.
 
 For more information, please read the article.  [Chang et.al (2023) *bioRxiv*](https://doi.org/10.1101/2022.11.16.516714)
 
