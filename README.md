@@ -32,7 +32,7 @@ Step 2: Run `MIS_variance_trail_qsub.py` using the in-between file as input. Sui
 
 ## Image Processing
 
-We have provided an example data, which path is $PATH.  
+We have provided an example data, which path is `./Example_Data`.  
 
 Step 1: Edit the directory in python file `scan_fstack.py` as the directory you wish. Run the code: 
 
