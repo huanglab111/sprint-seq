@@ -8,6 +8,26 @@ For more information, please read the article.  [Chang et.al (2023) *bioRxiv*](h
 
 Code for SPRINT-seq consists of four parts, **barcode_design**, **image_processing**, **gene_calling** and **cell_segmentation**. Data will be processed in this order.
 
+# Data Architecture
+
+Raw data base directory and processed data output directory can be whatever place you need. But its subdirectory should be like this:
+
+Raw data root                           Output root
+
+|---RUN_ID1                               |---RUN_ID1_processed (automate created)
+
+|---RUN_ID2                               |    |---focal_stacked (automate created)
+
+|---RUN_IDN                              |     |---background_corrected (automate created)
+
+​                                                     |    |---registered (automate created)
+
+​                                                     |    |---stitched (automate created)
+
+​                                                     |    |---resized (automate created)
+
+Your raw data should be in folder RUN_ID.
+
 # Start
 
 This code should be run under `python 3.8`. Later version will bring some environment problems.
@@ -40,13 +60,13 @@ Step 2: Run `MIS_variance_trail_qsub.py` using the in-between file as input. Sui
 
 ## Image Processing
 
-We have provided an example data, which path is `./Example_Data`.  
-
 Step 1: Edit the directory in python file `scan_fstack.py` as the directory you wish. Run the code: 
 
 ```shell
 python scan_fstack.py
 ```
+
+We have provided a preprocessed example data for Step 2 and pipeline after, which path is `./Example_Data`.  You should create a folder `output_root/whatever_name_processed/focal_stacked/` and put all example data in it.
 
 Step 2: Edit the directory in python file `image_process_after_stack.py` the same as the directory before. Run the code: 
 
