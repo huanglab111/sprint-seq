@@ -30,7 +30,7 @@ Output root
 
 |    |---focal_stacked (automate created)
 
-|    |---background_corrected (automate created)
+|     |---background_corrected (automate created)
 
 |    |---registered (automate created)
 
@@ -75,7 +75,7 @@ Step 2: Run `MIS_variance_trail_qsub.py` using the in-between file as input. Sui
 Step 1: Edit the directory in python file `scan_fstack.py` as the directory you wish. Run the code: 
 
 ```shell
-python scan_fstack.py
+python scan_fstack.py Raw_data_root
 ```
 
 We have provided a preprocessed example data for Step 2 and pipeline after, which path is `./Example_Data`.  You should create a folder `output_root/whatever_name_processed/focal_stacked/` and put all example data in it.
