@@ -30,7 +30,7 @@ Output root
 
 |    |---focal_stacked (automate created)
 
-|     |---background_corrected (automate created)
+|    |---background_corrected (automate created)
 
 |    |---registered (automate created)
 
