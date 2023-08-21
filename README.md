@@ -10,13 +10,21 @@ Code for SPRINT-seq consists of four parts, **barcode_design**, **image_processi
 
 # Start
 
+This code should be run under `python 3.8`. Later version will bring some environment problems.
+
 To run this code, packages must be installed with command:
 
 ```shell
 pip install -r requirements.txt
 ```
 
-And MATLAB engine should be installed, you can follow [official guideline](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html).  
+And MATLAB engine should be installed, according to your local MATLAB version, you can follow [official guideline](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html).  
+
+For example, MATLAB R2021b：`python -m pip install matlabengine==9.11.21`
+
+And **pip setuptools** needs a correct version. 
+
+For MATLAB R2021b: `pip install --upgrade pip setuptools==57.5.0`
 
 **Remind!** There are lots of paths or directories need to be edited in files mentioned below.
 
