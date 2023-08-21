@@ -12,19 +12,31 @@ Code for SPRINT-seq consists of four parts, **barcode_design**, **image_processi
 
 Raw data base directory and processed data output directory can be whatever place you need. But its subdirectory should be like this:
 
-Raw data root                           Output root
+Raw data root                           
 
-|---RUN_ID1                               |---RUN_ID1_processed (automate created)
+|---RUN_ID1
 
-|---RUN_ID2                               |    |---focal_stacked (automate created)
+|---RUN_ID2
 
-|---RUN_IDN                              |     |---background_corrected (automate created)
+|...
 
-​                                                     |    |---registered (automate created)
+|---RUN_IDN
 
-​                                                     |    |---stitched (automate created)
 
-​                                                     |    |---resized (automate created)
+
+Output root
+
+|---RUN_ID1_processed (automate created)
+
+|    |---focal_stacked (automate created)
+
+|     |---background_corrected (automate created)
+
+|    |---registered (automate created)
+
+|    |---stitched (automate created)
+
+|    |---resized (automate created)
 
 Your raw data should be in folder RUN_ID.
 
