@@ -45,9 +45,9 @@ def main():
         str(sdc_dir), str(rgs_dir), ['cy3', 'cy5', 'DAPI'], im_names, ref_cyc, ref_chn)
     meta_df.to_csv(rgs_dir / 'integer_offsets.csv')
 
-    patch_tiles(rgs_dir/f'cyc_{ref_cyc}_{ref_chn}',27*12)
+    patch_tiles(rgs_dir/f'cyc_{ref_cyc}_{ref_chn}',5*5)
     stc_dir.mkdir(exist_ok=True)
-    template_stitch(rgs_dir/f'cyc_{ref_cyc}_{ref_chn}', stc_dir, 27, 12)
+    template_stitch(rgs_dir/f'cyc_{ref_cyc}_{ref_chn}', stc_dir, 5,5)
 
     offset_df = pd.read_csv(rgs_dir / 'integer_offsets.csv')
     offset_df = offset_df.set_index('Unnamed: 0')
