@@ -38,6 +38,8 @@ Output root
 
 |    |---resized (automate created)
 
+|    |---readout (automate created)
+
 Your raw data should be in folder RUN_ID.
 
 # Start
@@ -90,7 +92,7 @@ Results will be large stitched images, which will be used in next part.
 
 ## Gene Calling
 
-Step 1:  Before running code, a probe sequence file should be provided. It should be a csv file and formatted like:
+Step 1:  Before running code, a padlock sequence file should be provided. It should be a csv file and formatted like:
 
 ```csv
 Name,Padlock
@@ -102,7 +104,7 @@ Gene_nameN,Padlock_sequenceN
 
 Step 2: Run the jupyter notebook file `generate_ref_files.ipynb`. A reference barcode book will be produced named `Your_Given_Name.csv`.
 
-Step 3: Edit the directory in `Gene_calling.py` and run it. A csv file containing spots coordinate and gene name will be generated, named `mapped_genes.csv`.
+Step 3: Edit the directory in `Gene_calling.py` and run it. A csv file containing spots coordinate and gene name will be generated, named `output_root/whatever_name_processed/readout/mapped_genes.csv`.
 
 ## Cell Segmentation
 
