@@ -115,3 +115,5 @@ Edit the directory in `segment.py` and run it. This code will segment cell nucle
 ## Expression Matrix Analysis
 
 Edit the directory and run the jupyter notebook file `integrated_analysis_SPRINTseq.ipynb`, important post processing results will be shown inside the jupyter.
+
+The provided dataset is just an example data, so we provided another true experimental data for post-analysis in folder `example_dataset_whole_brain`. Run `merge.py` to build dataset from splited dataset, and replace `mapped_genes.csv` and `centroids_all.csv` mentioned above with file in this folder to use this dataset for Matrix Analysis.
