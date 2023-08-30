@@ -6,7 +6,7 @@ For more information, please read the article.  [Chang et.al (2023) *bioRxiv*](h
 
 # Code Preview
 
-Code for SPRINT-seq consists of four parts, **barcode_design**, **image_processing**, **gene_calling** and **cell_segmentation**. Data will be processed in this order.
+Code for SPRINT-seq consists of five parts, **barcode_design**, **image_processing**, **gene_calling** **cell_segmentation** and **expression_matrix_analysis**. Data will be processed in this order.
 
 # Data Architecture
 
@@ -39,6 +39,8 @@ Output root
 |    |---resized (automate created)
 
 |    |---readout (automate created)
+
+|    |---segmented (automate created)
 
 Your raw data should be in folder RUN_ID.
 
@@ -108,5 +110,8 @@ Step 3: Edit the directory in `Gene_calling.py` and run it. A csv file containin
 
 ## Cell Segmentation
 
-Edit the directory in `segment.py` and run it. This code will segment cell nucleus according to DAPI channel. A csv file containing the coordinate of nucleus centroid will be generated.
+Edit the directory in `segment.py` and run it. This code will segment cell nucleus according to DAPI channel. A csv file containing the coordinate of nucleus centroid will be generated named `output_root/whatever_name_processed/segmented/centroids_all.csv`.
 
+## Expression Matrix Analysis
+
+Edit the directory and run the jupyter notebook file `integrated_analysis_SPRINTseq.ipynb`, important post processing results will be shown inside the jupyter.
