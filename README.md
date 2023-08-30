@@ -82,7 +82,7 @@ Step 1: Edit the directory in python file `scan_fstack.py` as the directory you 
 python scan_fstack.py Raw_data_root
 ```
 
-We have provided a preprocessed example data for Step 2 and pipeline after, which path is `./Example_Data`.  You should create a folder `output_root/whatever_name_processed/focal_stacked/` and put all example data in it.
+We have provided a preprocessed example data for Step 2 and pipeline after, which path is `./example_dataset`.  You should create a folder `output_root/whatever_name_processed/focal_stacked/` and put all example data in it.
 
 Step 2: Edit the directory in python file `image_process_after_stack.py` the same as the directory before. Run the code: 
 
