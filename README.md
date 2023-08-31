@@ -36,8 +36,6 @@ Output root
 
 |    |---stitched (automate created)
 
-|    |---resized (automate created)
-
 |    |---readout (automate created)
 
 |    |---segmented (automate created)
@@ -74,6 +72,8 @@ Step 1: Run `generate_graph.py`.  An in-between file will be generated.
 
 Step 2: Run `MIS_variance_trail_qsub.py` using the in-between file as input. Suitable barcodes will be generated in a txt file.
 
+We have provided example in-between file `test_graph_210809_G58.txt` and example final file `min_var_mis_0809_G58.txt`. 
+
 ## Image Processing
 
 Step 1: Edit the directory in python file `scan_fstack.py` as the directory you wish. Run the code: 
@@ -107,6 +107,8 @@ Gene_nameN,Padlock_sequenceN
 Step 2: Run the jupyter notebook file `generate_ref_files.ipynb`. A reference barcode book will be produced named `Your_Given_Name.csv`.
 
 Step 3: Edit the directory in `Gene_calling.py` and run it. A csv file containing spots coordinate and gene name will be generated, named `output_root/whatever_name_processed/readout/mapped_genes.csv`.
+
+We have provided example csv file `108_plex_10base_barcodes_padlock_sequence.csv` and example barcode book `plex_map_filtered_108plex_10base_barcode.csv`. 
 
 ## Cell Segmentation
 
